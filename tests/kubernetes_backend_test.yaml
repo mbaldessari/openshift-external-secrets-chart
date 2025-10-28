@@ -142,7 +142,7 @@ tests:
     asserts:
       - equal:
           path: spec.provider.kubernetes.auth.serviceAccount.name
-          value: external-secrets
+          value: ocp-external-secrets
       - equal:
           path: spec.provider.kubernetes.auth.serviceAccount.namespace
           value: external-secrets

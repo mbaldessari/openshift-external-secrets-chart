@@ -9,7 +9,7 @@ ocpExternalSecrets:
     # @default -- depends on the individual settings
     serviceAccount:
       # -- The name of the service account used by external secrets
-      name: "external-secrets"
+      name: "ocp-external-secrets"
       # -- The namespace where the service account is created
       namespace: "external-secrets"
 
