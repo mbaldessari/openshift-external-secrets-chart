@@ -1,6 +1,6 @@
 # openshift-external-secrets
 
-![Version: 0.0.1](https://img.shields.io/badge/Version-0.0.1-informational?style=flat-square)
+![Version: 0.0.2](https://img.shields.io/badge/Version-0.0.2-informational?style=flat-square)
 
 A Helm chart to set up the Openshift External Secrets Operator
 
@@ -32,6 +32,9 @@ A Helm chart to set up the Openshift External Secrets Operator
 | ocpExternalSecrets.kubernetes.remoteNamespace | string | `"validated-patterns-secrets"` | The remote namespace used in the ClusterSecretStore |
 | ocpExternalSecrets.kubernetes.server.url | string | `"https://kubernetes.default"` | The URL used in the ClusterSecretStore |
 | ocpExternalSecrets.rbac.rolename | string | `"hub-role"` | The name of the vault role when connecting to the vault from the hub |
+| ocpExternalSecrets.rbac.serviceAccount | object | depends on the individual settings | ServiceAccount configuration for external secrets |
+| ocpExternalSecrets.rbac.serviceAccount.name | string | `"ocp-external-secrets"` | The name of the service account used by external secrets |
+| ocpExternalSecrets.rbac.serviceAccount.namespace | string | `"external-secrets"` | The namespace where the service account is created |
 | ocpExternalSecrets.vault | object | depends on the individual settings | Some vault configuration entries |
 | ocpExternalSecrets.vault.mountPath | string | `"hub"` | The vault secrets' path when connecting to it from the hub |
 
