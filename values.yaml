@@ -28,6 +28,10 @@ ocpExternalSecrets:
     # -- The vault secrets' path when connecting to it from the hub
     mountPath: "hub"
 
+  # -- Some AWS settings when using AWS IAM as password backend
+  aws:
+    region: eu-west-3
+
   # -- This controls how ESO connects to vault and it allows to specify where the public key
   # of the CA that signed the API endpoint to talke to the vault
   # @default -- depends on the individual settings
